@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About me | Nikesh Dahal</title>
+
+  <style>
+    /* Sidebar, divider, and content width */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 720px);
+      max-width: 870px;
+      min-height: 70vh;
+      margin: 40px 32px;
+    }
+
+    nav {
+      padding: 8px 24px 0 0;
+      border-right: 1px solid var(--accent);
+    }
+
+    nav a {
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    nav a:focus-visible {
+      outline: 1px solid var(--accent);
+      outline-offset: 5px;
+    }
+
+    /* About me: adjust line-height and paragraph margin for spacing */
+    main {
+      display: flow-root;
+      min-width: 0;
+      padding-left: 32px;
+      line-height: 1.55;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+
+    main p {
+      margin: 0 0 16px;
+    }
+
+    /* Portrait: adjust width to resize; text wraps around it */
+    .about-photo {
+      float: right;
+      width: 160px;
+      max-width: 35%;
+      border: 1px solid var(--text);
+      height: auto;
+      margin: 0 45px 16px 24px;
+    }
+
+    /* Mobile layout */
+    @media (max-width: 600px) {
+      .layout {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        margin: 32px 24px;
+      }
+
+      nav {
+        padding: 0 0 8px;
+        border-right: none;
+        border-bottom: 1px solid var(--accent);
+      }
+
+      main {
+        padding: 28px 0 0;
+      }
+
+      .about-photo {
+        margin-left: 16px;
+      }
+    }
+  </style>
+
+  <!-- Shared fonts and colours -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="layout">
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+      <a href="index.html">home</a>
+      <a href="about.html" aria-current="page">about me</a>
+      <a href="research.html">research</a>
+      <a href="teaching.html">teaching</a>
+      <a href="publications.html">publications</a>
+    </nav>
+
+    <!-- About me -->
+    <main>
+      <h1>Nikesh Dahal</h1>
+
+      <img
+        class="about-photo"
+        src="images/aboutme.jpg"
+        alt="Portrait of Nikesh Dahal"
+      >
+
+      <p>
+        I am a researcher and an educator from Nepal, with formal
+        training in ecology and evolutionary biology. I received my
+        PhD from the University of Michigan, Ann Arbor, USA.
+        Currently, I am working as a postdoctoral research associate
+        at the University of York, UK.
+      </p>
+
+      <p>
+        While formally trained as a biologist, I'm broadly interested
+        in science, politics, and their interdependent relationship,
+        particularly in the context of the ongoing biodiversity crisis.
+        To this end, I believe that a historical materialist approach
+        is key to both making sense of the Anthropocene and critically
+        engaging with the material and intellectual histories of
+        biodiversity science.
+      </p>
+
+      <p>
+        In my experience, engaging in rigorous interdisciplinary work
+        is very challenging. In part, this is because such inquiries
+        often require questioning some of the fundamental premises of
+        one's own discipline while meticulously engaging with the histories
+        and methods of other disciplines. In this process, I've found
+        informal learning spaces to be key to serious and critical
+        interdisciplinary engagement. They offer the intellectual freedom
+        to question disciplinary assumptions and room to experiment and
+        make mistakes without the pressure of producing commodified
+        knowledge. I'm always excited to connect with people who
+        have had similar experiences.
+      </p>
+
+      <p>
+        Feel free to reach out to me
+        at dahal.nikesh [at] gmail [dot] com.
+      </p>
+    </main>
+  </div>
+</body>
+</html>

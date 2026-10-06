@@ -1,0 +1,36 @@
+/* Edit these for the site's appearance. */
+:root {
+  --background: #f5ecc2;
+  --text: #253122;
+  --accent: #cc1236;
+
+  --font: "Courier New", Courier, monospace;
+  --font-size: 15px;
+  --line-spacing: 1.7;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: var(--line-spacing);
+}
+
+h1 {
+  font-weight: 500;
+}
+
+/* Navigation: base text normally, accent when hovered or selected */
+nav a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav a[aria-current="page"],
+nav a:hover,
+nav a:focus-visible,
+nav a:active {
+  color: var(--accent);
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Nikesh Dahal</title>
+
+  <style>
+    /* Sidebar, divider, and content width */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 720px);
+      max-width: 870px;
+      min-height: 70vh;
+      margin: 40px 32px;
+    }
+
+    nav {
+      padding: 8px 24px 0 0;
+      border-right: 1px solid var(--accent);
+    }
+
+    nav a {
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    nav a:focus-visible {
+      outline: 1px solid var(--accent);
+      outline-offset: 5px;
+    }
+
+    /* Content typography and spacing */
+    main {
+      min-width: 0;
+      padding-left: 32px;
+      line-height: 1.55;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+
+    main p {
+      margin: 0 0 16px;
+    }
+
+    /* Mobile layout */
+    @media (max-width: 600px) {
+      .layout {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        margin: 32px 24px;
+      }
+
+      nav {
+        padding: 0 0 8px;
+        border-right: none;
+        border-bottom: 1px solid var(--accent);
+      }
+
+      main {
+        padding: 28px 0 0;
+      }
+    }
+  </style>
+
+  <!-- Shared fonts and colours -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="layout">
+    <!-- Navigation: mark only this page with aria-current -->
+    <nav aria-label="Main navigation">
+      <a href="index.html">home</a>
+      <a href="about.html">about me</a>
+      <a href="research.html" aria-current="page">research</a>
+      <a href="teaching.html">teaching</a>
+      <a href="publications.html">publications</a>
+    </nav>
+
+    <!-- Page content -->
+    <main>
+      <h1>Research</h1>
+      <p>Page in development.</p>
+    </main>
+  </div>
+</body>
+</html>
